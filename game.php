@@ -33,19 +33,20 @@ foreach (str_split($word) as $letter) {
   }
 }
 
+sort($guesses);
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
   <title>Txt Hangman</title>
+  <meta name="viewport" content="widt =320">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 </head>
 <body>
   <div>
-    Word: <?php echo $word ?>
   </div>
   <div>
-    Guessed: <?php echo implode(", ", $guesses) ?>
   </div>
   <?php if ($message) { ?><div id="message"><?php echo $message ?></div><?php } ?>
   <form method="get">
@@ -58,7 +59,13 @@ foreach (str_split($word) as $letter) {
     <input type="submit">
     </div>
   </form>
-  
-  <textarea rows="2" cols="60"><?php echo $states[count($guessed)] ?> | <?php echo $out ?></textarea>
+  <input type="text" size="60" id="copy" value="<?php echo $states[count($guessed)] ?> | <?php echo $out ?> [Guesses: <?php echo implode(', ', $guesses) ?>]">
+<p>
+<a href="index.php">start over</a>
+</p>
+<script>
+document.getElementById("copy").focus();
+document.getElementById("copy").select();
+</script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 $allowed = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-$ok = "1234567890,\.\/\& ";
+$ok = "1234567890,\.\/\&' ";
 $blank = "_";
 
 $states = array(
