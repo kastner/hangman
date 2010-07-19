@@ -39,8 +39,8 @@ sort($guesses);
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Txt Hangman</title>
-  <meta name="viewport" content="widt =320">
+  <title>Txt Hngmn</title>
+  <meta name="viewport" content="width=320">
   <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 </head>
 <body>

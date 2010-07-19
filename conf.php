@@ -5,12 +5,12 @@ $blank = "_";
 
 $states = array(
   "HANG MAN... GO!",
-  "o",
-  "o---",
-  "o-,-",
-  "o-|-",
-  "o-|-/",
-  "8-|-X LOSE!"
+  "[1/6] o",
+  "[2/6] o--",
+  "[3/6] o,-",
+  "[4/6] o|-",
+  "[5/6] o|-/",
+  "[6/6] 8|-X GAME OVER!"
 );
 
 function fmt($str) {
